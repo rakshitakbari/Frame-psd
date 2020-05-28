@@ -1,0 +1,79 @@
+#features{
+    background: #D6E6F2;
+    position: relative;
+    padding: 80px 0;
+    .features-heading{
+        h2{
+            font-size: 50px;
+            line-height: 1.45;
+            position: relative;
+            padding-bottom: 30px;
+            color: $black;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            font-weight: 600;
+            @include media-breakpoint-down(md){
+                font-size: 30px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 20px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                width: 70px;
+                height: 2px;
+                background: #1a57a5;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+        p{
+            margin-bottom: 30px;
+            color: #73767c;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+    }
+    .features-details{
+        h3{
+            line-height: 1.45;
+            font-size: 36px;
+            color: $theme-color !important;
+            font-weight: 600;
+            @include media-breakpoint-down(sm){
+                font-size: 26px;
+            }
+        }
+        p{
+            margin-bottom: 30px;
+            color: #73767c;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                margin: 0 0 10px;
+                padding: 0;
+                position: relative;
+                list-style: none;
+                display: flex;
+                i{
+                    color: $theme-color;
+                    font-size: 16px;
+                    padding-right: 30px;
+                    padding-top: 6px;
+                }
+            }
+        }
+        &.space{
+            @include media-breakpoint-down(md){
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

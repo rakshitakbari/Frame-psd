@@ -1,0 +1,60 @@
+#three{
+    padding: 80px 0;
+    @include media-breakpoint-down(md){
+        padding: 40x 0;
+    }
+    .three-box{
+        position: relative;
+        padding: 30px;
+        margin-bottom: 30px;
+        float: left;
+        width: 100%;
+        @include media-breakpoint-down(md){
+            margin-bottom: 0;
+        }
+        i{
+            display: block;
+            font-size: 70px;
+            margin-bottom: 50px;
+            color: $theme-color;
+        }
+        h2{
+            font-size: 24px;
+            color: $theme-color;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            line-height: 1.1;
+        }
+        p{
+            margin-bottom: 30px;
+            color: #73767c;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        a{
+            -webkit-transition: .3s all;
+            transition: .3s all;
+            color: $theme-color;
+            position: relative;
+            display: flex;
+            text-decoration: none;
+            font-weight: 600;
+            &:hover{
+                i{
+                    right: -10px;
+                }
+            }
+            .fa-angle-right{
+                position: relative;
+                right: 0;
+                top: 4px;
+                -webkit-transition: .3s all ease;
+                transition: .3s all ease;
+                font-size: 20px;
+                margin-left: 10px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

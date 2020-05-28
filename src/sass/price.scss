@@ -1,0 +1,104 @@
+#pricing{ 
+    padding: 80px 0;
+    .features-heading{
+        h2{
+            font-size: 50px;
+            line-height: 1.45;
+            position: relative;
+            padding-bottom: 30px;
+            color: $black;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            font-weight: 600;
+            @include media-breakpoint-down(md){
+                font-size: 30px;
+            }
+            @include media-breakpoint-down(sm){
+                font-size: 20px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                width: 70px;
+                height: 2px;
+                background: #1a57a5;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+        p{
+            margin-bottom: 30px;
+            color: #73767c;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+    }   
+    .table-pricing{
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 30px;
+        border: 1px solid #ebebeb;
+        h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            color: $black;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+        p{
+            margin-bottom: 30px;
+            color: #73767c;
+            line-height: 1.7;
+            font-size: 16px;
+            strong {
+                font-size: 62px;
+                font-weight: 300;
+                color: $theme-color;
+            }
+        }
+        .table-note {
+            color: #bdbdbd;
+            font-style: italic;
+            font-size: 14px;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                margin: 0 0 10px;
+                padding: 0;
+                position: relative;
+                list-style: none;
+                display: flex;
+                line-height: 1.7;
+                font-size: 16px;
+                i{
+                    color: $theme-color;
+                    font-size: 16px;
+                    padding-right: 16px;
+                    padding-top: 6px;
+                }
+            }
+        }
+        .btn {
+            border-radius: 0;
+            font-size: 16px;
+            padding: 10px 40px;
+            background-color: $black;
+            color: $white;margin-top: 20px;
+        }
+        .btn.btn-primary {
+            background: $theme-color;
+            &:hover{
+               background: #103463; 
+            }
+        }
+    }
+    .price-box-shodow{
+        -webkit-box-shadow: 0 20px 45px -10px rgba(0,0,0,.15);
+        box-shadow: 0 20px 45px -10px rgba(0,0,0,.15);
+    }
+}
